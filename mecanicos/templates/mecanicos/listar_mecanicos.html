@@ -10,7 +10,6 @@
         {% for mecanico in mecanicos %}
             <li>
                 <a href="{% url 'detalhes_mecanico' mecanico.id %}">{{ mecanico.nome }}</a>
-                - Nível de Complexidade: {{ mecanico.nivelComplexidade }}
             </li>
         {% endfor %}
     </ul>
