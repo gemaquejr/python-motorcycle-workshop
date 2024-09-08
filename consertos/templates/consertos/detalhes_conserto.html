@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Conserto</title>
+</head>
+<body>
+    <h1>Detalhes do Conserto para Moto ID: {{ conserto.motoId }}</h1>
+    <p>Complexidade do Conserto: {{ conserto.complexidadeDoConserto }}</p>
+    <p>Tipo de Conserto: {{ conserto.tipoConsertoId }}</p>
+    <p>Tempo Real: {{ conserto.tempoReal }}</p>
+    <p>Data de Entrada: {{ conserto.dataEntrada }}</p>
+    <p>Mecânico ID: {{ conserto.mecanicoId }}</p>
+    <a href="{% url 'listar_consertos' %}">Voltar para Lista de Consertos</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Consertos</title>
+</head>
+<body>
+    <h1>Lista de Consertos</h1>
+    <ul>
+        {% for conserto in consertos %}
+            <li>
+                <a href="{% url 'detalhes_conserto' conserto.id %}">Moto ID: {{ conserto.motoId }}</a>
+                - Complexidade: {{ conserto.complexidadeDoConserto }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
