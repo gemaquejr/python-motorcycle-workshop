@@ -7,6 +7,7 @@ class TipoConserto(models.Model):
 
 
 class ConsertoDeMoto(models.Model):
+    moto_id = models.IntegerField(default=0)
     complexidade_do_conserto = models.IntegerField()
     tipo_conserto = models.ForeignKey(TipoConserto, on_delete=models.CASCADE)
     tempo_real = models.IntegerField(null=True, blank=True)
