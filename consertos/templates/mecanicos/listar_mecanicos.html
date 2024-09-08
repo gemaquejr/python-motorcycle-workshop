@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Mecânicos</title>
+</head>
+<body>
+    <h1>Lista de Mecânicos</h1>
+    <ul>
+        {% for mecanico in mecanicos %}
+            <li>
+                <a href="{% url 'detalhes_mecanico' mecanico.id %}">{{ mecanico.nome }}</a>
+                - Nível de Complexidade: {{ mecanico.nivelComplexidade }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

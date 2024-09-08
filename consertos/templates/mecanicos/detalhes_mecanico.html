@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Mecânico</title>
+</head>
+<body>
+    <h1>Detalhes do Mecânico: {{ mecanico.nome }}</h1>
+    <p>Idade: {{ mecanico.idade }}</p>
+    <p>Horas Trabalhadas por Dia: {{ mecanico.tempoPorDia }}</p>
+    <p>Nível de Complexidade: {{ mecanico.nivelComplexidade }}</p>
+    <a href="{% url 'listar_mecanicos' %}">Voltar para Lista de Mecânicos</a>
+</body>
+</html>
