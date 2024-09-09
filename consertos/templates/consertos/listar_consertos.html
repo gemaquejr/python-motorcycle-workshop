@@ -9,8 +9,7 @@
     <ul>
         {% for conserto in consertos %}
             <li>
-                <a href="{% url 'detalhes_conserto' conserto.id %}">Moto ID: {{ conserto.motoId }}</a>
-                - Complexidade: {{ conserto.complexidadeDoConserto }}
+                <a href="{% url 'detalhes_conserto' conserto.id %}">Moto ID: {{ conserto.moto_id }}</a>
             </li>
         {% endfor %}
     </ul>
